@@ -559,7 +559,9 @@ i {
     margin: 10px;
   }
   .cards img {
-    width: 100%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
     border-radius: 10px;
     object-fit: contain;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
@@ -596,14 +598,18 @@ i {
   }
 
   .cards p {
-    font-size: 10px;
+    font-size: 9px;
     opacity: 0.5;
     display: contents;
   }
+  .cards img {
+    width: 150px;
+    height: 150px;
+  }
 
   .cards {
-      width: 101px;
-    height: 170px;
+    width: 200px;
+    height: 200px;
     background-color: #141414;
     border-radius: 10px;
     transition: 0.5s ease;
@@ -613,15 +619,23 @@ i {
   .card_content {
     display: flex;
     gap: 5px;
-    flex-wrap: wrap;
-    max-height: 44vh;
-    overflow-y: scroll;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    max-height: 70vh;
     margin-top: 10px;
   }
-
+  .songplay {
+    background-color: rgb(0 0 0);
+    border-radius: 10px;
+    padding: 0.5em;
+    margin-top: 12rem;
+    border: 2px solid rgb(83, 81, 81);
+  }
   .play img {
-    padding: 15px;
-    border-radius: 60px;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 50%;
     background-color: #1fdf64;
   }
   .play {
@@ -632,7 +646,7 @@ i {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 83px;
+    top: 135px;
     right: 33px;
     opacity: var(--a);
     transition: all 0.3s ease-out;
