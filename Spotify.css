@@ -602,8 +602,8 @@ i {
   }
 
   .cards {
-    width: 100px;
-    height: 150px;
+      width: 101px;
+    height: 170px;
     background-color: #141414;
     border-radius: 10px;
     transition: 0.5s ease;
